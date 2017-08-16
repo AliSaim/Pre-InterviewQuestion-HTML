@@ -1,44 +1,93 @@
-﻿.navbar {
-	background-color: white;
-	padding-bottom:20px;
+﻿body {
+	/* back color of the page */
+	background: #FAFAFA
+}
+.post-container {
+	/* profile box white space */
+	background: white;
 }
 
+.navbar {
+	/* nav bar background color */
+	background-color: white;
+}
+
+.profile {
+	/* padding at botton for spacing */
+	padding-bottom: 15px;
+}
 
 #mainSection {
-	align-content: center;
+	/* bring down the contant of page from end fo narbar */
 	padding-top: 90px;
 }
 
-#buttonsSection {
-	padding-top: 20px;
-	align-content: center;
+.logotext {
+	/* logo button text */
+	margin-top: -3px;
+	background: #EDEBEC;
+	border: 5px solid #EDEBEC;
+	color: #4EBBE6;
 }
-
-.btn{
-	padding-top: 20px;
+.active {
+	/* active tab of narbar */
+	height: 65px;
+	background-color: #e5e5e5;
+	border-bottom: 4px solid #4EBBE6;
+}
+.btn {
+	/* buttons color */
+	margin-top: 15px;
 	background-color: #75DEBF;
 	color: white;
 }
 
-
 .post-container {
+	/*profile container */
 	padding: 10px;
-	margin: 20px 20px 0 0;
+	margin: 20px 0px 0px 00px;
 	border: 1px solid #DCDCDC;
 	border-radius: 5px;
 	overflow: auto;
 }
 
 .post-thumb {
+	/* profile image aligned to left */
 	float: left;
 }
 
 .post-thumb img {
+	/* profile image gray border */
 		display: block;
 		border: 3px solid #DCDCDC;
-	}
+}
 
 .post-content {
 	margin-left: 150px;
 }
+
+
+
+
+/* profile header */
+h4 {
+	position: relative;
+	font-size: 15px;
+	font-weight: bold;
+}
+h4 span {
+		background-color: white;
+		padding-right: 10px;
+}
+	h4:after {
+		/* header line after profile type */
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 0.5em;
+		border-top: 1px solid #DCDCDC;
+		z-index: -1;
+	}
 
